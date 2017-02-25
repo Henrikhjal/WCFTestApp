@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFTest.Messages", "WCFTest.Messages\WCFTest.Messages.csproj", "{DB4E07BE-E136-4FF6-8EFF-84F6270A30FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFTest.MessageServices", "WCFTest.Messages\WCFTest.MessageServices.csproj", "{DB4E07BE-E136-4FF6-8EFF-84F6270A30FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFTest.Entities", "WCFTest.Entities\WCFTest.Entities.csproj", "{7236A788-B321-45F3-AEF5-FDC9BB1A4361}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFTest.Data", "WCFTest.Data\WCFTest.Data.csproj", "{8B210561-2429-44CB-957F-D1754CB11735}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{DB4E07BE-E136-4FF6-8EFF-84F6270A30FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB4E07BE-E136-4FF6-8EFF-84F6270A30FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB4E07BE-E136-4FF6-8EFF-84F6270A30FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7236A788-B321-45F3-AEF5-FDC9BB1A4361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7236A788-B321-45F3-AEF5-FDC9BB1A4361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7236A788-B321-45F3-AEF5-FDC9BB1A4361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7236A788-B321-45F3-AEF5-FDC9BB1A4361}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B210561-2429-44CB-957F-D1754CB11735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B210561-2429-44CB-957F-D1754CB11735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B210561-2429-44CB-957F-D1754CB11735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B210561-2429-44CB-957F-D1754CB11735}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
