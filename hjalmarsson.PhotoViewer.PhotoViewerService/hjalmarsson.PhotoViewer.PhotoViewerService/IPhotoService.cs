@@ -9,6 +9,10 @@ namespace hjalmarsson.PhotoViewer.PhotoViewerService
     {
 
         [OperationContract]
-        List<Photo> GetPhotos();
+        List<Photo> GetAllPhotos();
+
+        [OperationContract]
+        Photo[] GetRandomPhotos();
+
     }
 }

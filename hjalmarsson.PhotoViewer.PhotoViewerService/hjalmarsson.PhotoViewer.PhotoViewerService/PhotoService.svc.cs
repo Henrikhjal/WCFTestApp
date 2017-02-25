@@ -5,10 +5,16 @@ namespace hjalmarsson.PhotoViewer.PhotoViewerService
 {
     public class PhotoService : IPhotoService
     {
-        public List<Photo> GetPhotos()
+        Repository.Repository repository = new Repository.Repository();
+        public List<Photo> GetAllPhotos()
         {
-            var repository = new Repository.Repository();
+
             return repository.GetAllPhotos();
+        }
+
+        public Photo[] GetRandomPhotos()
+        {
+            return repository.GetRandomPhotos();
         }
     }
 }
