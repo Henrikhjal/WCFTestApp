@@ -9,7 +9,7 @@ namespace hjalmarsson.PhotoViewer.PhotoViewerService.Repository
     {
         public static List<Photo> photos = new List<Photo>();
 
-        public List<Photo> GetAllPhotos()
+        private List<Photo> GetAllPhotos()
         {
 
             if (photos.Count == 0)
@@ -46,9 +46,13 @@ namespace hjalmarsson.PhotoViewer.PhotoViewerService.Repository
             Random rr = new Random();
             int inx;
 
-            int antal = r.Next(0, photos.Count);
-            Photo[] randomPhotos = new Photo[antal];
+            if (photos.Count == 0)
+            {
+                GetAllPhotos();
+            }
 
+            int antal = r.Next(1, photos.Count);
+            var randomPhotos = new Photo[antal];
 
             for (int i = 0; i < antal; i++)
             {
