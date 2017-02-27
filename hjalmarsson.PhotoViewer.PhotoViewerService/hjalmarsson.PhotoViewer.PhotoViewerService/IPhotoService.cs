@@ -1,4 +1,5 @@
 ﻿using hjalmarsson.PhotoViewer.PhotoViewerService.Entity;
+using System.Collections.Generic;
 using System.ServiceModel;
 
 namespace hjalmarsson.PhotoViewer.PhotoViewerService
@@ -7,11 +8,8 @@ namespace hjalmarsson.PhotoViewer.PhotoViewerService
     public interface IPhotoService
     {
 
-        //[OperationContract]
-        //List<Photo> GetAllPhotos();
-
         [OperationContract]
-        Photo[] GetRandomPhotos();
+        List<Photo> GetRandomPhotos();
 
     }
 }

@@ -40,11 +40,13 @@ namespace hjalmarsson.PhotoViewer.PhotoViewerService.Repository
             return photos;
         }
 
-        public Photo[] GetRandomPhotos()
+        //public Photo[] GetRandomPhotos()
+        public List<Photo> GetRandomPhotos()
         {
             Random r = new Random();
             Random rr = new Random();
             int inx;
+            List<Photo> photoCol = new List<Photo>();
 
             if (photos.Count == 0)
             {
@@ -58,8 +60,9 @@ namespace hjalmarsson.PhotoViewer.PhotoViewerService.Repository
             {
                 inx = rr.Next(0, photos.Count);
                 randomPhotos[i] = photos[inx];
+                photoCol.Add(photos[inx]);
             }
-            return randomPhotos;
+            return photoCol;
         }
     }
 }
